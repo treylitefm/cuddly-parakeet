@@ -1,0 +1,85 @@
+.navbar a {
+  color: #A593E0;
+  font-weight: 900; }
+
+.navbar .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px; }
+
+.navbar .navbar-toggle .icon-bar {
+  background-color: #A593E0; }
+
+.landing {
+  height: 66vw;
+  max-height: 100vh;
+  background-image: url(/img/WKH_site1.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .landing .darken {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 66vw;
+    max-height: 100vh;
+    width: 100vw;
+    position: relative; }
+    .landing .darken .content {
+      position: absolute;
+      color: white;
+      background-color: gray;
+      padding: 10px;
+      border-radius: 5px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .landing .darken .content p {
+        margin: 0; }
+
+.about-title {
+  margin: auto;
+  padding: 100px 0 25px 0; }
+  .about-title span {
+    padding: 10px;
+    border: 4px solid gray;
+    border-radius: 5px;
+    color: gray; }
+
+.row-about {
+  margin-bottom: 80px; }
+  .row-about p {
+    color: gray; }
+
+.container-wrap-gray {
+  background-color: gray;
+  padding: 100px; }
+  .container-wrap-gray form {
+    margin: auto; }
+  .container-wrap-gray .contact-title {
+    font-size: 1.5em;
+    margin-bottom: 30px; }
+    .container-wrap-gray .contact-title span {
+      border: 5px solid white;
+      border-radius: 5px;
+      padding: 10px; }
+  .container-wrap-gray .contact {
+    list-style-type: none; }
+
+.text-white {
+  color: white; }
+
+.container.goodshop {
+  padding: 85px;
+  color: gray; }
+
+@media only screen and (max-width: 600px) {
+  .landing .darken .since {
+    font-size: 0.6em; } }
+
+@media only screen and (min-width: 601px) {
+  .title {
+    font-size: 2.5em; } }
+
+@media only screen and (min-width: 1441px) {
+  .title {
+    font-size: 4em; } }
