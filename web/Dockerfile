@@ -6,13 +6,13 @@ RUN apt-get install -y python python-pip libpq-dev python-dev
 
 RUN pip install --upgrade pip
 
-WORKDIR /var/wkhfund
+WORKDIR /var/wkhfund-proj
 
 RUN pip install psycopg2 gunicorn django==1.10.4
 
 #node dependencies. keep?
 RUN apt-get install -y npm git curl
-RUN npm install -g n bower
+RUN npm install -g n 
 RUN n stable
 
 EXPOSE 8000

@@ -16,7 +16,7 @@ services:
             dockerfile: Dockerfile
         image: wkhfund
         volumes:
-            - $PWD/web/src:/var/wkhfund
+            - $PWD/web/src:/var/wkhfund-proj
     postgres:
         container_name: postgres-server
         image: postgres

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+<!--		<link href="https://cdn.quilljs.com/1.1.8/quill.snow.css" rel="stylesheet">
+-->
+    </head>
+    <body>
+
+    <div ng-controller="HeaderController" class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle nav</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#!/" class="navbar-brand">WKHFund</a>
+            </div>
+            <div class="navbar-right navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#!/">About Us</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#goodshop">Goodshop</a></li>
+                    <li><a href="#!/newsletter">Newsletter</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="landing">
+		<div class="darken text-center">
+			<div class="content">
+				<p class="title">WKHFund</p>
+				<p class="since"><i>Since 1992</i></p>
+			</div>
+		</div>
+    </div>
+
+    <div ng-view></div>
+
+	<div class="container-wrap-gray">
+		<div class="container">
+			<div class="text-center row">
+				<form id="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="ZQXFJ4LTXGVCG">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="goodshop" class="container goodshop text-center">
+		<p><span><a  href="https://www.goodsearch.com/goodshop.aspx?charityid=829915"><img style="width:300px" src="/static/img/goodshop-logo-600px.jpg"></a></span></p>
+		<p>A great and free way to support Walter K. Hoerning Endowment Fund is by shopping through Goodshop! They work with thousands of stores like <a href="http://www.goodsearch.com/target/coupons "> Target</a> and <a href="http://www.goodsearch.com/rei/coupons "> REI</a>, so that up to 20% of purchases will be donated back to us, at no cost to you! <a href="http://www.goodsearch.com/old-navy/coupons "> Old Navy</a>, <a href="http://www.goodsearch.com/amazon/coupons "> Amazon</a>, and more also offer tons of deals and coupons, so you can save money while supporting us. Click on the logo or <a href="https://www.goodsearch.com/register "> signup </a> to sync us for donations!</p>
+	</div>
+
+	<div id="contact" class="container-wrap-gray contact text-center text-white">
+		<p class="contact-title"><span>Contact Us</span></p>
+		<ul class="contact">
+			<li>Mailing Address: 285 Fifth Avenue, PMB 453, Brooklyn, NY 11215</li>
+			<li>Tele & Fax: (347) 619-5787</li>
+			<li>Email: <a class="link">WKHFund@aol.com</a></li>
+		</ul>
+	</div>
+
+	<!-- Include the Quill library -->
+<!--	<script src="https://cdn.quilljs.com/1.1.8/quill.js"></script>
+-->
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/HeaderController.js"></script>
+    <script src="/static/js/NewsletterController.js"></script>
+    </body>
+</html>

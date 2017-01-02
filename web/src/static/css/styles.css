@@ -14,7 +14,7 @@
 .landing {
   height: 66vw;
   max-height: 100vh;
-  background-image: url(/img/WKH_site1.jpeg);
+  background-image: url(/static/img/WKH_site1.jpeg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed; }

@@ -15,5 +15,7 @@ echo Database is ready bub
 #python manage.py migrate;
 #gunicorn --workers 3 --bind 0.0.0.0:8000 $1.wsgi:application
 #python manage.py runserver 0.0.0.0:8000
-npm install --save gulp gulp-sass
+npm install -g bower
+npm install # --save gulp gulp-sass
+bower install --allow-root
 node node_modules/gulp/bin/gulp.js
